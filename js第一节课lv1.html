@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let obj1 = new Object();
+    obj1.name = 'wsy';
+    obj1.age = '18';
+    console.log(obj1); 
+    let obj2 = {
+            name: 'haerin',
+            age: '18'
+        }
+        console.log(obj2);
+
+    function Person(name, age, sex) {
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+        this.sayHi = function () {
+            alert('我的名字叫：' + this.name + '，年龄：' + this.age + '，性别：' + this.sex);
+        }
+    }
+    var myname = new Person('wsy', 18, '女');
+    var haerin = new Person('haerin', 19, '女');
+    console.log(myname.name);
+    console.log(haerin.name);
+    </script>
+</body>
+</html>
